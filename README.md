@@ -1,0 +1,13 @@
+Step 1: Open chrome in debug mode. On Mac, you can do it as follow in terminal
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir=~/Library/Application\ Support/Google/Chrome 
+
+Step 2: on newly opened browser, go this website: https://docs.rs/chromiumoxide/0.7.0/chromiumoxide/
+On second tab: http://localhost:9222/json
+
+Step 3: Find the websocket url of the rust website. e.g. ws://localhost:9222/devtools/page/289FADBCA79B9DC520DD0CC261733068
+
+Step 4: In Rust main.rs, line number 9, update it "ws://localhost:9222/devtools/page/289FADBCA79B9DC520DD0CC261733068"
+
+Step 5: cargo run
+
+then check the output
