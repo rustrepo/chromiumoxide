@@ -18,8 +18,8 @@ clicking, typing, dropdown
 1. Verify Selector: Use browser dev tools (e.g., Chrome's "Inspect" tool) to test the selector in the console:
 document.querySelector("input.search-input[name='search'][aria-label='Run search in the documentation']")
 
-2. Wait for Element: If the element is dynamically loaded, use page.wait_for_element before interacting with it:
-page.wait_for_element("input.search-input[name='search'][aria-label='Run search in the documentation']").await?;
+2. Wait for Element: If the element is dynamically loaded, use page.find_element before interacting with it:
+page.find_element("input.search-input[name='search'][aria-label='Run search in the documentation']").await?;
 
 3. Click a button
 // Locate and click a button
