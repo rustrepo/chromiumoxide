@@ -33,7 +33,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
 
     // Find the target with the desired URL
-    let desired_url = "https://www.upwork.com/nx/find-work/best-matches";
+    let desired_url = "https://www.rust-example.com/";
     let target = targets
         .into_iter()
         .find(|t| t.url == desired_url)
